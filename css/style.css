@@ -383,4 +383,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 30px;
 }
 
+.nav__list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
 /*# sourceMappingURL=style.css.map */
