@@ -1,0 +1,26 @@
+.about {
+  background-image: url("../img/Rectangle.jpg");
+  color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.5;
+    padding-top: 60px;
+  }
+  &__desc {
+    font-weight: 700;
+    line-height: 1.5;
+    max-width: 625px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  &__img {
+    position: absolute;
+    padding: 60px 135px 60px 675px;
+  }
+}
