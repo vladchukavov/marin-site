@@ -377,7 +377,7 @@ a {
   outline: none;
 }
 
-.btn, .about__btn {
+.btn, .about__btn, .appointment__btn {
   border: none;
   background: #2d5e5e;
   border-radius: 10px;
@@ -392,10 +392,10 @@ a {
   font-size: 18px;
   line-height: 1.33;
 }
-.btn:hover, .btn:focus, .about__btn:hover, .about__btn:focus {
+.btn:hover, .btn:focus, .about__btn:hover, .about__btn:focus, .appointment__btn:hover, .appointment__btn:focus {
   opacity: 0.7;
 }
-.btn:active, .about__btn:active {
+.btn:active, .about__btn:active, .appointment__btn:active {
   opacity: 0.4;
 }
 
@@ -515,6 +515,16 @@ a {
 .about__img {
   position: absolute;
   padding: 60px 135px 60px 675px;
+}
+
+.appointment__grid {
+  display: grid;
+}
+.appointment__title {
+  color: #000;
+  text-align: center;
+  font-size: 48px;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=style.css.map */
