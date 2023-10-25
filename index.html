@@ -90,22 +90,32 @@
                 </div>
                 <div class="appointment__grid">
                     <label>
-                        <input class="appointment__subject" type="text" name="subject" placeholder="Тема встречи *">
+                        <select class="appointment__subject" name="subject">
+                            <option value="#">Тема встречи *</option>
+                            <option value="#">1</option>
+                            <option value="#">2</option>
+                            <option value="#">3</option>
+                            <option value="#">4</option>
+                        </select>
                     </label>
                 </div>
                 <div class="appointment__grid">
                     <label>
                         <textarea class="appointment__wishes" name="wishes" placeholder="Пожелания" cols="30" rows="10"></textarea>
-<!--                        <input class="appointment__wishes" type="text" name="wishes" placeholder="Пожелания">-->
                     </label>
                 </div>
             </div>
-            <label>
-                <input type="checkbox">
-                Я согласен с политикой конфиденциальности
-            </label>
-
-            <a class="appointment__btn" href="#">Отправить</a>
+            <div class="appointment__flex">
+                <label class="appointment__privacy">
+                    <input class="appointment__cb" type="checkbox">
+                    <svg class="appointment__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <rect x="0.5" y="0.5" width="14.0462" height="14" fill="white" stroke="#2D5E5E"/>
+                        <rect x="2.00616" y="2" width="11.0338" height="11" fill="#2D5E5E" visibility="hidden"/>
+                    </svg>
+                    Я согласен с политикой конфиденциальности
+                </label>
+                <a class="appointment__btn" href="#">Отправить</a>
+            </div>
         </form>
     </section>
 </main>

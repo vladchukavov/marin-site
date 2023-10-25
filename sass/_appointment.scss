@@ -1,21 +1,22 @@
 .appointment {
-
   &__container {
     display: grid;
     grid-template-columns: 369px 369px;
-    grid-template-rows: 40px 40px 40px 180px;
+    grid-template-rows: 40px 40px 40px;
     gap: 30px;
     justify-content: center;
-
   }
-  .appointment__grid:nth-child(2) {
+  &__grid:nth-child(2) {
     grid-row: 2 / 3;
   }
-  .appointment__grid:nth-child(3) {
+  &__grid:nth-child(3) {
     grid-row: 3 / 4;
   }
-  .appointment__grid:nth-child(4) {
+  &__grid:nth-child(4) {
     grid-column: 2 / 3;
+  }
+  &__grid:nth-child(5) {
+    grid-column: 1 / 4;
   }
   &__title {
     color: #000;
@@ -37,12 +38,41 @@
     font-size: 18px;
     line-height: 1.3;
   }
+  &__subject {
+    appearance: none;
+    background-image: url("../img/sort-down.png");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+  }
   &__wishes {
     min-width: 372px;
     max-height: 180px;
-    //border-radius: 10px;
-    //border: 1px solid #000;
     resize: none;
     padding: 8px 0 0 20px;
+  }
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  &__privacy {
+    display: flex;
+    align-items: center;
+    color: #2D5E5E;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.5;
+  }
+  &__cb {
+    opacity: 0;
+  }
+  &__svg {
+    margin-right: 15px;
+  }
+  &__cb:checked + svg rect {
+    visibility: visible;
   }
 }
