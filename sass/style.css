@@ -497,26 +497,29 @@ a {
 
 .about {
   background-image: url("../img/Rectangle.jpg");
-  color: #fff;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.about__text-block {
+  display: flex;
+  flex-direction: column;
+}
 .about__title {
+  color: #FFF;
   font-size: 36px;
   line-height: 1.5;
-  padding-top: 60px;
 }
 .about__desc {
+  color: #FFF;
   font-weight: 700;
   line-height: 1.5;
   max-width: 625px;
 }
-.about__container {
+.about__img-block {
   display: flex;
-  flex-direction: column-reverse;
 }
 .about__img {
+  align-self: flex-end;
   position: absolute;
   padding: 60px 135px 60px 675px;
 }
