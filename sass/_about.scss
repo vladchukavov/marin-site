@@ -2,27 +2,30 @@
   background-image: url("../img/Rectangle.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  &__text-block {
-    display: flex;
-    flex-direction: column;
-  }
-  &__title {
-    color: #FFF;
-    font-size: 36px;
-    line-height: 1.5;
-  }
-  &__desc {
-    color: #FFF;
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 494px;
+  grid-template-rows: auto 1fr 40px;
+  gap: 35px 30px;
+  &__title, &__desc {
+    margin: 0;
     font-weight: 700;
     line-height: 1.5;
-    max-width: 625px;
   }
-  &__img-block {
-    display: flex;
+  &__title {
+    font-size: 36px;
+  }
+  &__desc {
+  max-width: 625px;
   }
   &__img {
-    align-self: flex-end;
-    position: absolute;
-    padding: 60px 135px 60px 675px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
+  &__container {
+    display: flex;
+    gap: 30px;
   }
 }
