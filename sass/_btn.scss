@@ -27,3 +27,14 @@
 .appointment__btn {
   padding: 5px 74px;
 }
+.reviews__btn {
+    border: none;
+    background-color: #fff;
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+    &:active {
+      opacity: .4;
+    }
+}
