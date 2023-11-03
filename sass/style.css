@@ -377,7 +377,7 @@ a {
   outline: none;
 }
 
-.btn, .about__btn, .appointment__btn {
+.btn, .about__btn, .appointment__btn, .registration__btn {
   background: #2d5e5e;
   border-radius: 10px;
   border: 3px solid #2d5e5e;
@@ -393,10 +393,10 @@ a {
   line-height: 1.33;
   min-width: 250px;
 }
-.btn:hover, .btn:focus, .about__btn:hover, .about__btn:focus, .appointment__btn:hover, .appointment__btn:focus {
+.btn:hover, .btn:focus, .about__btn:hover, .about__btn:focus, .appointment__btn:hover, .appointment__btn:focus, .registration__btn:hover, .registration__btn:focus {
   opacity: 0.7;
 }
-.btn:active, .about__btn:active, .appointment__btn:active {
+.btn:active, .about__btn:active, .appointment__btn:active, .registration__btn:active {
   opacity: 0.4;
 }
 
@@ -417,6 +417,10 @@ a {
 }
 .reviews__btn:active {
   opacity: 0.4;
+}
+
+.registration__btn {
+  padding: 8px 65px 8px 77px;
 }
 
 .header {
@@ -799,6 +803,52 @@ a {
 }
 .contacts__link:active {
   opacity: 0.4;
+}
+
+.registration {
+  padding-bottom: 60px;
+}
+.registration__title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 1.5;
+}
+.registration__container {
+  display: flex;
+  gap: 32px;
+}
+.registration__name, .registration__tel {
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 8px 0 8px 20.6px;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.3;
+  min-width: 369px;
+}
+.registration ::placeholder {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.registration__privacy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  color: #2D5E5E;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2.5;
+}
+.registration__cb {
+  opacity: 0;
+}
+.registration__svg {
+  margin-right: 15px;
+}
+.registration__cb:checked + svg rect {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */

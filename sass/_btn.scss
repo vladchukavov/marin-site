@@ -1,4 +1,4 @@
-.btn, .about__btn, .appointment__btn {
+.btn, .about__btn, .appointment__btn, .registration__btn {
   background: #2d5e5e;
   border-radius: 10px;
   border: 3px solid #2d5e5e;
@@ -37,4 +37,7 @@
     &:active {
       opacity: .4;
     }
+}
+.registration__btn {
+  padding: 8px 65px 8px 77px;
 }
