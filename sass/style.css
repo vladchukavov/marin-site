@@ -364,6 +364,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.img {
+  width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
 }
@@ -420,7 +424,8 @@ a {
 }
 
 .registration__btn {
-  padding: 8px 65px 8px 77px;
+  padding: 5px 65px 5px 77px;
+  min-width: 370px;
 }
 
 .header {
@@ -849,6 +854,29 @@ a {
 }
 .registration__cb:checked + svg rect {
   visibility: visible;
+}
+
+.underfooter {
+  background-color: #2D5E5E;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.underfooter__list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.underfooter__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  align-self: center;
+}
+.underfooter__img {
+  align-self: center;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

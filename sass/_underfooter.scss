@@ -1,0 +1,23 @@
+.underfooter {
+  background-color: #2D5E5E;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    align-self: center;
+
+  }
+  &__img {
+    align-self: center;
+    padding-left: 20px;
+  }
+}
