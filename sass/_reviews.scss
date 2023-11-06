@@ -4,18 +4,24 @@
   justify-content: center;
   align-items: center;
   gap: 0 43px;
-  padding-bottom: 70px;
+
   &__title {
     text-align: center;
     font-size: 48px;
     line-height: 1.5;
     grid-column: 1 / 4;
+    margin: 0;
+    padding-top: 60px;
   }
   &__container {
     background-color: #ADDDDE;
     display: grid;
     grid-template-columns: 245px auto;
     gap: 32px 30px;
+    margin-top: 50px;
+    margin-bottom: 68px;
+    max-width: 600px;
+    min-height: 260px;
   }
   &__img {
     border-radius: 70px;
@@ -27,13 +33,14 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 1.3;
-    padding-top: 20px;
+    padding-top: 26px;
+    padding-left: 3px;
   }
   &__desc {
     font-weight: 300;
     margin: 0;
     padding: 0 25px 20px 25px;
-    line-height: 1.3;
+    line-height: 1.5;
     grid-column: 1 / 3;
     text-align: center;
   }

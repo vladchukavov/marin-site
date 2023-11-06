@@ -373,8 +373,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .center {
-  padding-left: calc(50vw - 589px);
-  padding-right: calc(50vw - 589px);
+  padding-left: calc(50vw - 591px);
+  padding-right: calc(50vw - 591px);
 }
 
 a {
@@ -385,7 +385,7 @@ a {
   background: #2d5e5e;
   border-radius: 10px;
   border: 3px solid #2d5e5e;
-  padding: 5px 42px;
+  padding: 5px 29px 5px 28px;
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
@@ -424,8 +424,7 @@ a {
 }
 
 .registration__btn {
-  padding: 5px 65px 5px 77px;
-  min-width: 370px;
+  padding: 5px 73px 5px 76px;
 }
 
 .header {
@@ -471,7 +470,7 @@ a {
   font-size: 48px;
   line-height: 1.5;
   margin: 0 0 55px;
-  padding-top: 140px;
+  padding-top: 133px;
 }
 .offer__desc {
   font-size: 24px;
@@ -484,25 +483,24 @@ a {
   display: flex;
   justify-content: space-around;
   padding-top: 60px;
-  gap: 20px;
-  padding-bottom: 37px;
 }
 .services__item {
   max-width: 300px;
   text-align: center;
 }
 .services__icon {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 .services__title {
   font-size: 24px;
   line-height: 1.33;
-  margin: 0 0 20px;
+  margin: 0 0 17.5px;
   color: #2D5E5E;
 }
 .services__desc {
   font-weight: 500;
   line-height: 1.5;
+  margin-bottom: 37.5px;
 }
 
 .about {
@@ -515,7 +513,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 494px;
   grid-template-rows: auto 1fr 40px;
-  gap: 35px 30px;
+  gap: 20px 30px;
 }
 .about__title, .about__desc {
   margin: 0;
@@ -527,6 +525,7 @@ a {
 }
 .about__desc {
   max-width: 625px;
+  padding-top: 31px;
 }
 .about__img {
   grid-column: 2/3;
@@ -540,9 +539,11 @@ a {
 .appointment__container {
   display: grid;
   grid-template-columns: 369px 369px;
-  grid-template-rows: 40px 40px 40px;
+  grid-template-rows: 40px;
   gap: 30px;
   justify-content: center;
+  margin: 0;
+  padding-top: 48px;
 }
 .appointment__grid:nth-child(2) {
   grid-row: 2/3;
@@ -561,6 +562,8 @@ a {
   text-align: center;
   font-size: 48px;
   line-height: 1.5;
+  margin: 0;
+  padding-top: 60px;
 }
 .appointment__name, .appointment__tel, .appointment__subject, .appointment__wishes {
   border-radius: 10px;
@@ -603,6 +606,7 @@ a {
   font-size: 12px;
   font-weight: 500;
   line-height: 2.5;
+  padding-right: 12px;
 }
 .appointment__cb {
   opacity: 0;
@@ -622,32 +626,33 @@ a {
   color: #fff;
   display: flex;
   justify-content: space-around;
-  padding-top: 60px;
-  gap: 20px;
-  padding-bottom: 37px;
 }
 .counter__item {
-  max-width: 300px;
   text-align: center;
+  padding-right: 3px;
 }
-.counter__icon {
-  margin-bottom: 30px;
+.counter__title, .counter__list, .counter__desc {
+  margin: 0;
 }
 .counter__title {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   line-height: 1.5;
   font-weight: 900;
-  margin: 0 0 20px;
+  padding-top: 60px;
 }
 .counter__list {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.3;
+  padding-top: 14px;
 }
 .counter__desc {
   font-weight: 500;
   line-height: 1.5;
+  max-width: 300px;
+  padding-top: 20px;
+  margin-bottom: 60px;
 }
 
 .reviews {
@@ -656,19 +661,24 @@ a {
   justify-content: center;
   align-items: center;
   gap: 0 43px;
-  padding-bottom: 70px;
 }
 .reviews__title {
   text-align: center;
   font-size: 48px;
   line-height: 1.5;
   grid-column: 1/4;
+  margin: 0;
+  padding-top: 60px;
 }
 .reviews__container {
   background-color: #ADDDDE;
   display: grid;
   grid-template-columns: 245px auto;
   gap: 32px 30px;
+  margin-top: 50px;
+  margin-bottom: 68px;
+  max-width: 600px;
+  min-height: 260px;
 }
 .reviews__img {
   border-radius: 70px;
@@ -680,13 +690,14 @@ a {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.3;
-  padding-top: 20px;
+  padding-top: 26px;
+  padding-left: 3px;
 }
 .reviews__desc {
   font-weight: 300;
   margin: 0;
   padding: 0 25px 20px 25px;
-  line-height: 1.3;
+  line-height: 1.5;
   grid-column: 1/3;
   text-align: center;
 }
@@ -703,7 +714,7 @@ a {
 }
 .news__title {
   margin: 0;
-  padding: 0;
+  padding-left: 6px;
   font-size: 48px;
   line-height: 1.5;
 }
@@ -711,6 +722,7 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 84px;
+  padding-left: 6px;
 }
 .news__link {
   text-decoration: none;
@@ -719,6 +731,9 @@ a {
 .news__desc {
   font-size: 24px;
   line-height: 1.3;
+  margin: 0;
+  padding-top: 21.5px;
+  padding-bottom: 28px;
 }
 .news__desc:hover, .news__desc:focus {
   opacity: 0.7;
@@ -737,24 +752,26 @@ a {
   margin: 0;
   padding-top: 51px;
   padding-bottom: 58px;
+  padding-left: 5px;
 }
 .questions__box {
-  padding-top: 20px;
-  padding-left: 49px;
+  padding-top: 21px;
+  padding-left: 58px;
 }
 .questions__toggler {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 21px;
 }
 .questions__ask {
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.3;
 }
 .questions__desc {
-  padding-left: 36px;
-  margin-top: 20px;
+  padding-left: 40px;
+  margin-top: 21px;
   font-weight: 500;
   line-height: 1.5;
   max-width: 900px;
@@ -781,27 +798,29 @@ a {
 }
 .contacts__container {
   background: #ADDDDE;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 31px;
-  gap: 10px;
   min-width: 477px;
-  max-height: 344px;
+  min-height: 344px;
 }
 .contacts__title {
-  margin: 0;
   color: #2D5E5E;
   font-size: 48px;
   line-height: 1.5;
-  padding-left: 30px;
-  padding-top: 29px;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 34px;
+}
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 17px;
+  gap: 10px;
 }
 .contacts__link {
   color: #000;
   font-weight: 500;
   line-height: 1.5;
   text-decoration: none;
-  padding-left: 30px;
+  padding-left: 32px;
 }
 .contacts__link:hover, .contacts__link:focus {
   opacity: 0.7;
@@ -810,25 +829,25 @@ a {
   opacity: 0.4;
 }
 
-.registration {
-  padding-bottom: 60px;
-}
 .registration__title {
   text-align: center;
   font-size: 48px;
   line-height: 1.5;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 58px;
 }
 .registration__container {
   display: flex;
-  gap: 32px;
+  gap: 30px;
 }
 .registration__name, .registration__tel {
   border-radius: 10px;
   border: 1px solid #000;
-  padding: 8px 0 8px 20.6px;
+  padding: 8px 0 8px 19.5px;
   color: #000;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.33;
   min-width: 369px;
 }
 .registration ::placeholder {
@@ -840,7 +859,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 25px;
+  padding-top: 24px;
+  padding-right: 10px;
+  padding-bottom: 60px;
   color: #2D5E5E;
   font-size: 12px;
   font-weight: 500;
@@ -862,21 +883,22 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.underfooter__list {
-  list-style: none;
+.underfooter__item {
   display: flex;
-  gap: 10px;
-}
-.underfooter__link {
-  text-decoration: none;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  align-self: center;
+  align-items: center;
+  list-style: none;
+  gap: 36px;
+  padding-left: 50px;
 }
 .underfooter__img {
   align-self: center;
-  padding-left: 20px;
+}
+.underfooter__link {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.71;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
