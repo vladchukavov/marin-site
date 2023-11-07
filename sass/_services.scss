@@ -21,3 +21,12 @@
     margin-bottom: 37.5px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+    &__item {
+      max-width: 100%;
+    }
+  }
+}
