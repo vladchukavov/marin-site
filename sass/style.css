@@ -467,26 +467,33 @@ a {
     padding: 30px;
   }
 }
+.nav__link {
+  text-decoration: none;
+  color: #85aaab;
+  font-size: 18px;
+  font-weight: 700;
+}
+.nav__link_active {
+  color: #6de1e3;
+  border-bottom: 2px solid currentColor;
+}
+.nav__link:hover, .nav__link:focus {
+  color: #63cdcf;
+}
+
+.open_menu {
+  visibility: hidden;
+}
+
 @media screen and (max-width: 767px) {
-  .nav__link {
-    text-decoration: none;
-    color: #85aaab;
-    font-size: 18px;
-    font-weight: 700;
-  }
-  .nav__link_active {
-    color: #6de1e3;
-    border-bottom: 2px solid currentColor;
-  }
-  .nav__link:hover, .nav__link:focus {
-    color: #63cdcf;
-  }
-  .nav #open_menu:checked ~ .nav__list {
+  #open_menu:checked ~ .nav__list {
     display: flex;
     flex-direction: column;
   }
+  .open_menu {
+    visibility: visible;
+  }
 }
-
 .offer {
   padding-top: 110px;
   padding-bottom: 160px;

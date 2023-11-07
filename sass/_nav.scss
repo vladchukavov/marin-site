@@ -15,7 +15,6 @@
       padding: 30px;
     }
   }
-  @media screen and (max-width: 767px) {
   &__link {
     text-decoration: none;
     color: #85aaab;
@@ -30,12 +29,18 @@
       color: #63cdcf;
     }
   }
-    #open_menu:checked {
-      & ~ .nav__list {
-        display: flex;
-        flex-direction: column;
-
-      }
+}
+.open_menu {
+  visibility: hidden;
+}
+@media screen and (max-width: 767px) {
+  #open_menu:checked {
+    & ~ .nav__list {
+      display: flex;
+      flex-direction: column;
     }
+  }
+  .open_menu {
+    visibility: visible;
   }
 }
