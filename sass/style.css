@@ -381,6 +381,18 @@ a {
   outline: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .center {
+    padding-left: calc(50vw - 360px);
+    padding-right: calc(50vw - 360px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .center {
+    padding-left: calc(50vw - 195px);
+    padding-right: calc(50vw - 195px);
+  }
+}
 .btn, .about__btn, .appointment__btn, .registration__btn {
   background: #2d5e5e;
   border-radius: 10px;
@@ -442,18 +454,37 @@ a {
   display: flex;
   gap: 15px;
 }
-.nav__link {
-  text-decoration: none;
-  color: #85aaab;
-  font-size: 18px;
-  font-weight: 700;
+@media screen and (max-width: 767px) {
+  .nav__list {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 30px;
+  }
 }
-.nav__link_active {
-  color: #6de1e3;
-  border-bottom: 2px solid currentColor;
-}
-.nav__link:hover, .nav__link:focus {
-  color: #63cdcf;
+@media screen and (max-width: 767px) {
+  .nav__link {
+    text-decoration: none;
+    color: #85aaab;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .nav__link_active {
+    color: #6de1e3;
+    border-bottom: 2px solid currentColor;
+  }
+  .nav__link:hover, .nav__link:focus {
+    color: #63cdcf;
+  }
+  .nav #open_menu:checked ~ .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .offer {
@@ -463,6 +494,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #41413F;
   color: #fff;
 }
 .offer__title {
@@ -472,11 +504,50 @@ a {
   margin: 0 0 55px;
   padding-top: 133px;
 }
+@media screen and (max-width: 1200px) {
+  .offer__title {
+    font-size: 36px;
+    text-wrap: balance;
+    margin-bottom: 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .offer__title {
+    font-size: 30px;
+    text-wrap: balance;
+    margin-bottom: 25px;
+  }
+}
 .offer__desc {
   font-size: 24px;
   line-height: 1.5;
   max-width: 325px;
   margin: 0 0 55px;
+}
+@media screen and (max-width: 1200px) {
+  .offer__desc {
+    font-size: 18px;
+    margin-bottom: 36px;
+    text-wrap: balance;
+  }
+}
+@media screen and (max-width: 767px) {
+  .offer__desc {
+    font-size: 14px;
+    margin-bottom: 25px;
+    text-wrap: balance;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .offer {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .offer {
+    background-image: none;
+  }
 }
 
 .services {

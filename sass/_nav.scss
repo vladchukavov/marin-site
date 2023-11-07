@@ -3,7 +3,19 @@
     list-style: none;
     display: flex;
     gap: 15px;
+    @media screen and (max-width: 767px) {
+      display: none;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      background-color: white;
+      padding: 30px;
+    }
   }
+  @media screen and (max-width: 767px) {
   &__link {
     text-decoration: none;
     color: #85aaab;
@@ -16,6 +28,14 @@
     &:hover,
     &:focus {
       color: #63cdcf;
+    }
+  }
+    #open_menu:checked {
+      & ~ .nav__list {
+        display: flex;
+        flex-direction: column;
+
+      }
     }
   }
 }

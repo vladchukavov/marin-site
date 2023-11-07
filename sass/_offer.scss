@@ -5,19 +5,46 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #41413F;
   color: #fff;
-
   &__title {
     max-width: 454px;
     font-size: 48px;
     line-height: 1.5;
     margin: 0 0 55px;
     padding-top: 133px;
+    @media screen and (max-width: 1200px) {
+      font-size: 36px;
+      text-wrap: balance;
+      margin-bottom: 36px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 30px;
+      text-wrap: balance;
+      margin-bottom: 25px;
+    }
   }
   &__desc {
     font-size: 24px;
     line-height: 1.5;
     max-width: 325px;
     margin: 0 0 55px;
+    @media screen and (max-width: 1200px) {
+      font-size: 18px;
+      margin-bottom: 36px;
+      text-wrap: balance;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      margin-bottom: 25px;
+      text-wrap: balance;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
+  @media screen and (max-width: 767px) {
+    background-image: none;
   }
 }
