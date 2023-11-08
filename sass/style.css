@@ -366,7 +366,6 @@ body {
 
 .img {
   max-width: 100%;
-  display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -600,7 +599,7 @@ a {
   padding-bottom: 60px;
   display: grid;
   grid-template-columns: 1fr 494px;
-  grid-template-rows: auto 1fr 40px;
+  grid-template-rows: auto 1fr auto;
   gap: 20px 30px;
 }
 .about__title, .about__desc {
@@ -624,6 +623,23 @@ a {
   gap: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about__img {
+    grid-column: unset;
+    grid-row: 2/3;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about {
+    justify-content: center;
+  }
+  .about__container {
+    flex-direction: column;
+  }
+}
 .appointment__container {
   display: grid;
   grid-template-columns: 369px 369px;

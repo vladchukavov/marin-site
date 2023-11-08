@@ -7,7 +7,7 @@
   padding-bottom: 60px;
   display: grid;
   grid-template-columns: 1fr 494px;
-  grid-template-rows: auto 1fr 40px;
+  grid-template-rows: auto 1fr auto;
   gap: 20px 30px;
   &__title, &__desc {
     margin: 0;
@@ -28,5 +28,22 @@
   &__container {
     display: flex;
     gap: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about {
+    grid-template-columns: 1fr;
+    &__img {
+      grid-column: unset;
+      grid-row: 2/3;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .about {
+    justify-content: center;
+    &__container {
+      flex-direction: column;
+    }
   }
 }
