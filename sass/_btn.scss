@@ -41,3 +41,14 @@
 .registration__btn {
   padding: 5px 73px 5px 76px;
 }
+@media screen and (max-width: 360px) {
+  .btn, .about__btn, .appointment__btn, .registration__btn {
+    min-width: 350px;
+  }
+  .btn {
+    padding: 5px 0;
+  }
+  .registration__btn {
+    padding: 5px 0;
+  }
+}

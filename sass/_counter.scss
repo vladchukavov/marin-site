@@ -34,3 +34,9 @@
     margin-bottom: 60px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .counter {
+    flex-direction: column;
+    &__desc {max-width: 100%}
+  }
+}

@@ -46,3 +46,10 @@
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .questions {
+    &__box {
+      padding-left: 0;
+    }
+  }
+}

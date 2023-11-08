@@ -1,5 +1,4 @@
 .appointment {
-
   &__container {
     display: grid;
     grid-template-columns: 369px 369px;
@@ -8,8 +7,6 @@
     justify-content: center;
     margin: 0;
     padding-top: 48px;
-  }
-  &__grid {
   }
   &__grid:nth-child(2) {
     grid-row: 2 / 3;
@@ -30,7 +27,6 @@
     line-height: 1.5;
     margin: 0;
     padding-top: 60px;
-
   }
   &__name, &__tel, &__subject, &__wishes {
     border-radius: 10px;
@@ -83,5 +79,21 @@
   }
   &__cb:checked + svg rect {
     visibility: visible;
+  }
+}
+@media screen and (max-width: 768px) {
+  .appointment {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .appointment {
+    &__name, &__tel, &__subject, &__wishes {
+      min-width: 350px;
+    }
   }
 }

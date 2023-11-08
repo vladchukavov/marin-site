@@ -29,3 +29,9 @@ a {
     padding-right: calc(50vw - 195px);
   }
 }
+@media screen and (max-width: 400px) {
+  .center {
+    padding-left: calc(50vw - 100px);
+    padding-right: calc(50vw - 100px);
+  }
+}

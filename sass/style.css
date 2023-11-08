@@ -393,6 +393,12 @@ a {
     padding-right: calc(50vw - 195px);
   }
 }
+@media screen and (max-width: 400px) {
+  .center {
+    padding-left: calc(50vw - 100px);
+    padding-right: calc(50vw - 100px);
+  }
+}
 .btn, .about__btn, .appointment__btn, .registration__btn {
   background: #2d5e5e;
   border-radius: 10px;
@@ -439,6 +445,17 @@ a {
   padding: 5px 73px 5px 76px;
 }
 
+@media screen and (max-width: 360px) {
+  .btn, .about__btn, .appointment__btn, .registration__btn {
+    min-width: 350px;
+  }
+  .btn {
+    padding: 5px 0;
+  }
+  .registration__btn {
+    padding: 5px 0;
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -557,6 +574,13 @@ a {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .services {
   display: flex;
   justify-content: space-around;
@@ -635,6 +659,9 @@ a {
 @media screen and (max-width: 767px) {
   .about {
     justify-content: center;
+  }
+  .about__img {
+    max-width: 100%;
   }
   .about__container {
     flex-direction: column;
@@ -722,6 +749,18 @@ a {
   visibility: visible;
 }
 
+@media screen and (max-width: 768px) {
+  .appointment__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .appointment__name, .appointment__tel, .appointment__subject, .appointment__wishes {
+    min-width: 350px;
+  }
+}
 .counter {
   background-image: url("../img/counter-bg.jpg");
   background-repeat: no-repeat;
@@ -759,6 +798,14 @@ a {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 1200px) {
+  .counter {
+    flex-direction: column;
+  }
+  .counter__desc {
+    max-width: 100%;
+  }
+}
 .reviews {
   display: grid;
   grid-template-columns: 17px 600px 17px;
@@ -788,6 +835,8 @@ a {
   border-radius: 70px;
   justify-self: flex-end;
   margin-top: 20px;
+  width: 70px;
+  height: 70px;
 }
 .reviews__name {
   color: #2D5E5E;
@@ -806,6 +855,16 @@ a {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .reviews {
+    grid-template-columns: auto;
+  }
+  .reviews__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .news {
   background-image: url("../img/news-bg.jpg");
   background-size: cover;
@@ -844,6 +903,23 @@ a {
 }
 .news__desc:active {
   opacity: 0.4;
+}
+
+@media screen and (max-width: 1200px) {
+  .news {
+    align-items: center;
+  }
+  .news__container {
+    flex-direction: column;
+  }
+  .news__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+br {
+  display: none;
 }
 
 .questions {
@@ -891,10 +967,16 @@ a {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .questions__box {
+    padding-left: 0;
+  }
+}
 .contacts {
   background-image: url("../img/map.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #EDEDED;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -933,6 +1015,31 @@ a {
   opacity: 0.4;
 }
 
+@media screen and (max-width: 1200px) {
+  .contacts {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  .contacts {
+    justify-content: center;
+    min-height: 100%;
+  }
+  .contacts__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contacts__title {
+    padding: 0;
+  }
+  .contacts__link {
+    padding: 0;
+  }
+}
 .registration__title {
   text-align: center;
   font-size: 48px;
@@ -981,6 +1088,17 @@ a {
   visibility: visible;
 }
 
+@media screen and (max-width: 1200px) {
+  .registration__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .registration__name, .registration__tel {
+    min-width: 350px;
+  }
+}
 .underfooter {
   background-color: #2D5E5E;
   display: flex;
@@ -1003,6 +1121,20 @@ a {
   text-decoration: none;
   line-height: 1.71;
   color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .underfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .underfooter__item {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
