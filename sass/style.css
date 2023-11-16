@@ -466,6 +466,9 @@ a {
   width: 100%;
 }
 
+.nav {
+  padding-left: 530px;
+}
 .nav__list {
   list-style: none;
   display: flex;
@@ -509,6 +512,11 @@ a {
   }
   .open_menu {
     visibility: visible;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nav {
+    padding-left: 150px;
   }
 }
 .offer {
@@ -917,11 +925,10 @@ a {
     flex-direction: column;
     align-items: center;
   }
+  br {
+    display: none;
+  }
 }
-br {
-  display: none;
-}
-
 .questions {
   padding-bottom: 60px;
 }

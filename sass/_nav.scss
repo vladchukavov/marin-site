@@ -1,8 +1,10 @@
 .nav {
+  padding-left: 530px;
   &__list {
     list-style: none;
     display: flex;
     gap: 15px;
+
     @media screen and (max-width: 767px) {
       display: none;
       position: absolute;
@@ -43,4 +45,10 @@
   .open_menu {
     visibility: visible;
   }
+}
+@media screen and (max-width: 1200px) {
+  .nav {
+    padding-left: 150px;
+  }
+
 }
