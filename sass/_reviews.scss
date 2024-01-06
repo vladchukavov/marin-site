@@ -1,9 +1,13 @@
 .reviews {
-  display: grid;
-  grid-template-columns: 17px 600px 17px;
+  //display: grid;
+  //grid-template-columns: 17px 600px 17px;
+  //justify-content: center;
+  //align-items: center;
+  //gap: 0 43px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0 43px;
   &__title {
     text-align: center;
     font-size: 48px;
@@ -45,7 +49,38 @@
     grid-column: 1 / 3;
     text-align: center;
   }
+  &__slider {
+    display: grid;
+    gap: 0 43px;
+  }
+  &__btn-left {
+    grid-column: 1/2;
+  }
+  &__btn-right {
+    grid-column: 3/4;
+  }
+  &__btn-left,
+  &__btn-right {
+    border: none;
+    background-color: #fff;
+    grid-row: 1/2;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+    &:active {
+      opacity: .4;
+    }
+  }
 }
+.slider-slide {
+  display: none;
+  &.active {
+    display: grid;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .reviews {
     grid-template-columns: auto;
